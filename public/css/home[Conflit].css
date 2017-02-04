@@ -1,0 +1,27 @@
+body{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #777;
+}
+
+.header-container{
+  background-color: green;
+}
+
+.logo-container{
+  width: 300px;
+  background-color: blue;
+}
+
+.menu-container{
+  
+  background-color: red;
+}
+
+.menu-item{
+ 
+}
+
+.menu-ul{
+  
+}

@@ -1,0 +1,329 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+}
+
+.container-fluid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboard {
+    position: fixed;
+    background-color: #373d45;
+    color: white;
+    width: 15%;
+    height: 100vh;
+}
+
+#dashboard-title {
+    display: table;
+    height: 125px;
+    align-self: center;
+    width: 100%;
+}
+
+#dashboard-title>h2 {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    color: white;
+    font-family: "Source Sans Pro";
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    transform: scale(1,0.9);
+}
+
+.content {
+    display: flex;
+    position: relative;
+    background-color: white;
+    width: calc(100vw - 4vw - 15%);
+    min-height: calc(100vh - 4vw);
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: calc(15% + 2vw);
+    box-shadow: 0px 0px 15px rgba(136, 136, 136, 0.5);
+}
+
+.menu {
+    text-decoration: none;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.menu-item {
+    display: table;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.menu-item:hover {
+    background-color: #454d57;
+}
+
+.menu-item.selected {
+    background-color: #337ab7;
+    width: 105%;
+    box-shadow: 0px 0px 15px rgba(55, 61, 69, 0.7);
+}
+
+.menu-item>span {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    padding-left: 32px;
+    transform: scale(1.1, 1.15);
+}
+
+.menu-item.selected>span {
+    padding-left: 48px;
+}
+
+.account-info {
+    position: absolute;
+    width: 100%;
+    /*height: 50px;*/
+    bottom: 0;
+    cursor: pointer;
+}
+
+.account-info>.header {
+    height: 100%;
+    padding-bottom: 10px;
+}
+
+.account-info>.header:hover {
+    background: linear-gradient(to bottom, rgba(255,0,0,0), #454d57);
+}
+
+.account-info>.header>span {
+    font-family: "Open Sans";
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.account-info>.header>img {
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 20px;
+    right: 0;
+    width: 12px;
+    transition: transform 0.3s;
+}
+
+.account-info>.header>img.down {
+    transform: rotate(0deg);
+}
+
+.account-info>.header:hover >img.down {
+    transform: rotate(180deg);
+}
+
+.account-info>.header>img.up {
+    transform: rotate(180deg);
+}
+
+.account-info>.header:hover >img.up {
+    transform: rotate(0deg);
+}
+
+.account-info>.hidden-content {
+    height: 100px;
+}
+
+.account-info>.hidden-content>.footer>.logout-form {
+    margin-left: 60%;
+}
+
+.account-info>.hidden-content>.middle {
+    width: 100%;
+    height: 60%;
+    font-family: "Open Sans";
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+#timer {
+    font-family: "Source Sans Pro";
+}
+
+.form-collection {
+    border: dashed #d9d9d9;
+    border-radius: 20px;
+    display: table;
+    margin: 20px 0px 0px 30px;
+}
+
+.page-content {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    padding: 30px 30px 30px 20px;
+}
+
+.dataTable tr {
+    cursor: pointer;
+}
+
+.dataTables_wrapper {
+    align-items: stretch;
+    width: 100%;
+}
+
+.dashboard-form {
+    width: 100%;
+}
+
+.dataTables_wrapper .row:nth-of-type(2) {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.dataTables_wrapper .row:nth-of-type(3) {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 20px;
+}
+
+.form-collection>div {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    padding: 30px
+}
+
+.buttons-collection>input {
+    margin: 15px;
+}
+
+.buttons-collection {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 20px;
+    padding-right: 40px;
+}
+
+.input-helper {
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    font-family: "Source Sans Pro";
+    font-size: 17px;
+    border: solid 1px lightgray;
+    border-top: none;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.input-helper>table{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    /*background-color: #0d3625;*/
+}
+
+.input-helper>table>tbody>tr>td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.input-helper>table>tbody>tr {
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.input-helper>table>tbody>tr:hover {
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+.search-highlight {
+    font-size: 18px;
+}
+
+h4.no_client {
+    font-family: "Source sans pro";
+    color: lightgrey;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fom-row {
+    margin-bottom: 24px;
+}
+
+.fom-row.last {
+    margin-bottom: 0px;
+}
+
+.fom-row.middle {
+    margin-top: -20px;
+}
+
+h3.form-title {
+    padding-top: 0px;
+    margin: 0px;
+}
+
+div.before-form-title {
+    display: inline-block;
+    background-color: #337ab7;
+    width: 3px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+label.control-label {
+    font-family: "Source sans pro";
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.busy {
+    color: #d9534f;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+#myTable_filter {
+    display: inline;
+    float: right;
+}
+
+.noWork {
+    display: table;
+    width: 100%;
+    height: calc(100vh - 10vh);
+    text-align: center;
+    color: lightgrey;
+    font-family: "Source sans pro";
+    font-size: 40px;
+}
+
+.noWork>span {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+
+
+

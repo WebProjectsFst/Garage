@@ -1,0 +1,70 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    font-family: 'Open Sans';
+    font-size: 14px;
+    color: #777;
+}
+
+.navbar-fixed-top .nav {
+    padding: 25px 0;
+}
+
+.navbar-fixed-top {
+  background-color: white;
+}
+
+#carousel-container {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.carousel-inner {
+  height: 500px;
+  overflow: hidden;
+  border-top: 2px solid #777;
+  border-bottom: 1px solid #777;
+}
+
+.item img {
+  position: absolute;
+  top: -215px;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
+.navbar-header {
+  padding-left: 0px;
+}
+
+.menu-ul a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #777;
+}
+
+.menu-ul a:hover {
+  color: #1e69b8;
+}
+
+.nav > li > a:hover {
+  background-color: white;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  color: #1e69b8;
+  background-color: white;
+}
+
+@media(min-width:768px) {
+    body {
+        padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        padding: 20px 0;
+    }
+}
